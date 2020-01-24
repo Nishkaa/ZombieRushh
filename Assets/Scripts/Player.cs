@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     private Rigidbody2D myRigidbody;
@@ -12,16 +12,17 @@ public class Player : MonoBehaviour
     public float groundCheckRadius;
     public LayerMask groundLayer;
     private bool isTouchingGround;
-
-  
-   
+    public Animator animator;
+    public bool facingRight;
+    public AudioSource Jumping;
     // Start is called before the first frame update
     //'FixedUpdate' controlling the framerate speed if neccessary
-   
-        void Start()
-    {
 
+    void Start()
+    {
+        facingRight = true;
         myRigidbody = GetComponent<Rigidbody2D>();
+        Jumping = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -35,15 +36,22 @@ public class Player : MonoBehaviour
         //jumping
         if (Input.GetButtonDown("Jump") && isTouchingGround == true)
         {
-
             GetComponent<Rigidbody2D>().velocity = Vector2.up * jumpHeight;
+            Jumping.Play();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
         float horizontal = Input.GetAxis("Horizontal");
         Movement(horizontal);
+        animator.SetFloat("Speed",Mathf.Abs(horizontal));
+        // animator.SetBool("IsJumping", true);
+        turnAround(horizontal);
     }
 
     //moving left or right
-    private void Movement(float horizontal)
+    public void Movement(float horizontal)
     {
         myRigidbody.velocity = new Vector2(horizontal * movementSpeed, myRigidbody.velocity.y);
       
@@ -54,6 +62,18 @@ public class Player : MonoBehaviour
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
+            SceneManager.LoadScene("lose");
+        }
+     
+    }
+ public void turnAround( float horizontall)
+    {
+        if(horizontall > 0 && !facingRight || horizontall<0 && facingRight)
+        {
+            facingRight = !facingRight;
+            Vector3 theScale = transform.localScale;
+            theScale.x *= -1;
+            transform.localScale = theScale;
         }
     }
 

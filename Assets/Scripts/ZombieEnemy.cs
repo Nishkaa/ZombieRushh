@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ZombieEnemy : MonoBehaviour
 {
+
+    public AudioSource hit_hurt;
     public int health = 100;
     public GameObject deathEffect;
     public float speed;
@@ -11,6 +13,7 @@ public class ZombieEnemy : MonoBehaviour
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("PLayer").GetComponent<Transform>();
+        hit_hurt = GetComponent<AudioSource>();
 
     }
     void Update()
@@ -24,6 +27,11 @@ public class ZombieEnemy : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D col)
     {
+        if (col.gameObject.tag.Equals("Bullet"))
+        {
+            hit_hurt.Play();
+        }
+
         if (col.gameObject.tag.Equals("Bullet") && health <= 0)
         {
             Destroy(col.gameObject);

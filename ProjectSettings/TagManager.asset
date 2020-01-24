@@ -41,6 +41,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 2695499255
+    locked: 0
+  - name: clouds
+    uniqueID: 2479662263
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
