@@ -64,7 +64,12 @@ public class Player : MonoBehaviour
             Destroy(gameObject);
             SceneManager.LoadScene("lose");
         }
-     
+        if (col.gameObject.tag.Equals("Flag"))
+        {
+            Destroy(col.gameObject);
+            Destroy(gameObject);
+            SceneManager.LoadScene("LevelComplete");
+        }
     }
  public void turnAround( float horizontall)
     {
