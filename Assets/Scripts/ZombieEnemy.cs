@@ -6,7 +6,7 @@ public class ZombieEnemy : MonoBehaviour
 {
 
     public AudioSource hit_hurt;
-    public int health = 100;
+    public int health = 120;
     public GameObject deathEffect;
     public float speed;
     private Transform target;

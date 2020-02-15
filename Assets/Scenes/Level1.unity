@@ -20894,6 +20894,9 @@ MonoBehaviour:
   FireStartingPoint: {fileID: 2132154942}
   bulletPrefab: {fileID: 5484922457647748958, guid: 76f4665c8f085df47a56511762ef8ca1,
     type: 3}
+  bulletPrefabLazer: {fileID: 1280872502608101945, guid: 05123ffcf289714459a266e292a4b18d,
+    type: 3}
+  Deactivate: 0
 --- !u!114 &1904494159
 MonoBehaviour:
   m_ObjectHideFlags: 0
