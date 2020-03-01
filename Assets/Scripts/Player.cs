@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public Animator animator;
     public bool facingRight;
     public AudioSource Jumping;
+    
     // Start is called before the first frame update
     //'FixedUpdate' controlling the framerate speed if neccessary
 
@@ -54,7 +55,7 @@ public class Player : MonoBehaviour
     public void Movement(float horizontal)
     {
         myRigidbody.velocity = new Vector2(horizontal * movementSpeed, myRigidbody.velocity.y);
-      
+        
     }
     void OnCollisionEnter2D(Collision2D col)
     {

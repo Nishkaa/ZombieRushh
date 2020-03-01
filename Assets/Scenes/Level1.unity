@@ -1899,6 +1899,7 @@ GameObject:
   - component: {fileID: 152602437}
   - component: {fileID: 152602439}
   - component: {fileID: 152602438}
+  - component: {fileID: 152602440}
   m_Layer: 0
   m_Name: SoldierGun
   m_TagString: Untagged
@@ -1914,7 +1915,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152602436}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.67, y: -3.23, z: -0.161}
+  m_LocalPosition: {x: 1.77, y: -2.59, z: -0.161}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1904494161}
@@ -1978,7 +1979,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 08d67ffd51e066f4ab9450098be3d0be, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aaac3f1c3b7675f499f0b34d54dbf066, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1989,6 +1990,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &152602440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152602436}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712003ee17f23f04bb70ae9bdd640fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GunVisibility: 0
 --- !u!1 &165567351
 GameObject:
   m_ObjectHideFlags: 0
@@ -20820,11 +20834,11 @@ GameObject:
   - component: {fileID: 1904494161}
   - component: {fileID: 1904494160}
   - component: {fileID: 1904494159}
-  - component: {fileID: 1904494158}
   - component: {fileID: 1904494157}
   - component: {fileID: 1904494156}
   - component: {fileID: 1904494162}
   - component: {fileID: 1904494163}
+  - component: {fileID: 1904494158}
   m_Layer: 0
   m_Name: soldierFrame1
   m_TagString: PLayer
@@ -20894,8 +20908,7 @@ MonoBehaviour:
   FireStartingPoint: {fileID: 2132154942}
   bulletPrefab: {fileID: 5484922457647748958, guid: 76f4665c8f085df47a56511762ef8ca1,
     type: 3}
-  bulletPrefabLazer: {fileID: 1280872502608101945, guid: 05123ffcf289714459a266e292a4b18d,
-    type: 3}
+  bulletPrefabLazer: {fileID: 0}
   Deactivate: 0
 --- !u!114 &1904494159
 MonoBehaviour:
