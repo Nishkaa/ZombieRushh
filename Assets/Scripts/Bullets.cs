@@ -18,12 +18,12 @@ public class Bullets : MonoBehaviour
         if (FindObjectOfType<Player>().facingRight)
         {
             rb.velocity = transform.right * speed;
-            Destroy(gameObject,0.5f);
+            Destroy(gameObject,10.0f);
         }
         else
         {
             rb.velocity = -transform.right * speed;
-            Destroy(gameObject, 0.5f);
+            Destroy(gameObject, 10.0f);
         }
       
 
