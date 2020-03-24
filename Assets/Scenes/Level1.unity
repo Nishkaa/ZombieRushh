@@ -534,7 +534,7 @@ PrefabInstance:
     - target: {fileID: 7997017674518096448, guid: 2f7dc545d0b9ccb4aa53dad6a60da465,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7997017674518096448, guid: 2f7dc545d0b9ccb4aa53dad6a60da465,
         type: 3}
@@ -709,6 +709,65 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 94973542}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &321743915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 321743917}
+  - component: {fileID: 321743916}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &321743916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321743915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cc6d4b93d9861146874ea9f9b726dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: EnemyHit
+    clip: {fileID: 8300000, guid: 4b1727943adc95641b36181b11b3d2f7, type: 3}
+    volume: 0.707
+    pitch: 1
+    source: {fileID: 0}
+  - name: EnemyDead
+    clip: {fileID: 8300000, guid: 7835b324057806044b01d848310be650, type: 3}
+    volume: 0.559
+    pitch: 1
+    source: {fileID: 0}
+  - name: EnemyWalking
+    clip: {fileID: 8300000, guid: 6def5e3c30ef77446aa50742e2851874, type: 3}
+    volume: 0.559
+    pitch: 1
+    source: {fileID: 0}
+--- !u!4 &321743917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321743915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.448096, y: 0.08530486, z: -1.3394775}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &357518833
 GameObject:
   m_ObjectHideFlags: 0
@@ -3236,7 +3295,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1698547043
 GameObject:
@@ -3409,6 +3468,8 @@ MonoBehaviour:
     type: 3}
   bulletPrefabLazer: {fileID: 0}
   Deactivate: 0
+  waitTilNextFire: 0
+  fireSpeed: 1
 --- !u!82 &1734956383
 AudioSource:
   m_ObjectHideFlags: 0

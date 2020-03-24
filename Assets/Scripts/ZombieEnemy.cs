@@ -1,24 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class ZombieEnemy : MonoBehaviour
 {
+   
 
-    public AudioSource hit_hurt;
+
+
     public int health = 100;
     public GameObject deathEffect;
     public float speed;
     private Transform target;
+    
     void Start()
     {
+        
         target = GameObject.FindGameObjectWithTag("PLayer").GetComponent<Transform>();
-        hit_hurt = GetComponent<AudioSource>();
-
+ 
     }
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            FindObjectOfType<AudioManager>().Play("EnemyWalking");
+
+        ;
+
     }
     public void TakeDamage(int damage)
     {
@@ -29,13 +37,16 @@ public class ZombieEnemy : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("Bullet"))
         {
-            hit_hurt.Play();
+            FindObjectOfType<AudioManager>().Play("EnemyHit");
         }
+       
+      
 
         if (col.gameObject.tag.Equals("Bullet") && health <= 0)
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
+            FindObjectOfType<AudioManager>().Play("EnemyDead");
         }
     }
 

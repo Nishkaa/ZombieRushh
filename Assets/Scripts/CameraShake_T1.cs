@@ -14,7 +14,7 @@ public class CameraShake_T1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetButton("Fire1"))
         {
             StartShake(1.0f, 2.0f);
         }

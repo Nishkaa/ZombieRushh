@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     public Animator animator;
     public bool facingRight;
     public AudioSource Jumping;
+
+    
     
     // Start is called before the first frame update
     //'FixedUpdate' controlling the framerate speed if neccessary
@@ -29,6 +31,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
         //ground Checking
         isTouchingGround = Physics2D.OverlapCircle(groundCheckPoint.position,groundCheckRadius,groundLayer);
 
@@ -40,6 +43,8 @@ public class Player : MonoBehaviour
             GetComponent<Rigidbody2D>().velocity = Vector2.up * jumpHeight;
             Jumping.Play();
         }
+
+//Going back to menu
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
@@ -82,6 +87,6 @@ public class Player : MonoBehaviour
             transform.localScale = theScale;
         }
     }
-
+   
 }
    

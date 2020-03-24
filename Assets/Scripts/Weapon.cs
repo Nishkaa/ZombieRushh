@@ -9,7 +9,8 @@ public class Weapon : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject bulletPrefabLazer;
     public bool Deactivate = false;
-    
+    public float waitTilNextFire;
+    public float fireSpeed = 1f;
     // Update is called once per frame
     void Start()
     {
@@ -19,19 +20,26 @@ public class Weapon : MonoBehaviour
     }
     void Update()
     {
+      
+            if (Input.GetButton("Fire1"))
+            {
+                Shoot();
+            }
         
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Shoot();
-        }
-        
+            
+             
 
     }
     void Shoot()
     {
         //shooing
-        Instantiate(bulletPrefab, FireStartingPoint.position, FireStartingPoint.rotation);
-        
+        if (waitTilNextFire<=0)
+        {
+            Instantiate(bulletPrefab, FireStartingPoint.position, FireStartingPoint.rotation);
+            waitTilNextFire = 0.25f;
+        }
+        //fire rate speed of the shooting
+        waitTilNextFire -= Time.deltaTime * fireSpeed;
   
     }
     void LazerShoot()
