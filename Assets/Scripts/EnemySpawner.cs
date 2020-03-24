@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
         if(Time.time > nextSpawn)
         {
             nextSpawn = Time.time + spawnRate;
-            randX = Random.Range(-8.0f,8.0f);
+            randX = Random.Range(50.0f,52.0f);
             WhereToSpawn = new Vector2(randX, transform.position.y);
             Instantiate(Enemy, WhereToSpawn, Quaternion.identity);
         }

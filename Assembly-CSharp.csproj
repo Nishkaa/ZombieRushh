@@ -57,7 +57,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Bullets.cs" />
      <Compile Include="Assets\Scripts\CameraShake.cs" />
+     <Compile Include="Assets\Scripts\CameraShake_T1.cs" />
+     <Compile Include="Assets\Scripts\Charge_Blast.cs" />
      <Compile Include="Assets\Scripts\DisplayText.cs" />
+     <Compile Include="Assets\Scripts\EndLevelWalls.cs" />
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\FlagLevelComplete.cs" />
      <Compile Include="Assets\Scripts\GameTimer.cs" />
@@ -68,6 +71,7 @@
      <Compile Include="Assets\Scripts\Weapon.cs" />
      <Compile Include="Assets\Scripts\ZombieEnemy.cs" />
      <Compile Include="Assets\Scripts\camerafollow.cs" />
+     <Compile Include="Assets\Scripts\charge_jump.cs" />
      <Compile Include="Assets\Scripts\level2ES.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Program Files (x86)/Github/ZombieRushh/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

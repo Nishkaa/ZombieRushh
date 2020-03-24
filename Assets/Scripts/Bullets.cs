@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullets : MonoBehaviour
 {
-    public int damage = 3;
+    public int damage = 30;
     public float speed = 30f;
     public float leftspeed = -30f;
     
@@ -13,10 +13,12 @@ public class Bullets : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //firing when turn left or right
         rb = GetComponent<Rigidbody2D>();
 
         if (FindObjectOfType<Player>().facingRight)
         {
+            //bullet speed
             rb.velocity = transform.right * speed;
             Destroy(gameObject,10.0f);
         }
