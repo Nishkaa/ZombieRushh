@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullets : MonoBehaviour
 {
-    public int damage = 20;
+    public int damage = 10;
     public float speed = 30f;
     public float leftspeed = -30f;
     
@@ -47,6 +47,7 @@ public class Bullets : MonoBehaviour
         {
             enemy.TakeDamage(damage);
             Destroy(gameObject);
+            ScoreTextScript.scoreValue += 10;
         }
 
     }

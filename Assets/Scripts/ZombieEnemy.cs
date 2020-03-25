@@ -9,7 +9,7 @@ public class ZombieEnemy : MonoBehaviour
 
 
 
-    public int health = 100;
+    public int health = 120;
     public GameObject deathEffect;
     public float speed;
     private Transform target;
@@ -25,7 +25,7 @@ public class ZombieEnemy : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             FindObjectOfType<AudioManager>().Play("EnemyWalking");
 
-        ;
+        
 
     }
     public void TakeDamage(int damage)

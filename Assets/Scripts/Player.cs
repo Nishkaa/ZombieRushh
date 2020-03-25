@@ -77,6 +77,7 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("LevelComplete");
         }
     }
+    //turning and shooting left and right with a weapon 
  public void turnAround( float horizontall)
     {
         if(horizontall > 0 && !facingRight || horizontall<0 && facingRight)
@@ -87,6 +88,7 @@ public class Player : MonoBehaviour
             transform.localScale = theScale;
         }
     }
+    
    
 }
    

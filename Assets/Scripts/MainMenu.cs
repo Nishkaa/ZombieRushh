@@ -20,6 +20,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
+    public void GoBackLevel1()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
     public void Escape()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -27,14 +31,15 @@ public class MainMenu : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
-    public void GoToLevel2()
+    public void GoBackMainMenuFromInstructions()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 5);
     }
-    public void StartGoToLevel2()
+    public void GotoInstructionsFromMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 4);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
     }
+
 }
      
 
