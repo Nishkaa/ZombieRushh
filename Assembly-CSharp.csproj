@@ -55,12 +55,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Animation.cs" />
      <Compile Include="Assets\Scripts\AudioManager.cs" />
      <Compile Include="Assets\Scripts\Bullets.cs" />
      <Compile Include="Assets\Scripts\CameraShake.cs" />
      <Compile Include="Assets\Scripts\CameraShake_T1.cs" />
      <Compile Include="Assets\Scripts\Charge_Blast.cs" />
+     <Compile Include="Assets\Scripts\CubeAnimScript.cs" />
      <Compile Include="Assets\Scripts\DisplayText.cs" />
      <Compile Include="Assets\Scripts\EndLevelWalls.cs" />
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />

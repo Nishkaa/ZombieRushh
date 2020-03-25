@@ -16,7 +16,7 @@ public class CameraShake_T1 : MonoBehaviour
     {
         if (Input.GetButton("Fire1"))
         {
-            StartShake(1.0f, 2.0f);
+            StartShake(0.5f, 1.0f);
         }
     }
     private void LateUpdate()
@@ -24,7 +24,7 @@ public class CameraShake_T1 : MonoBehaviour
         if (shakeTimeRemaining > 0)
         {
             shakeTimeRemaining = Time.deltaTime;
-            float xAmount = Random.Range(-0.02f, 0.02f) * shakePower;
+            float xAmount = Random.Range(-0.01f, 0.01f) * shakePower;
             float yAmount = Random.Range(0f, 0f) * shakePower;
 
             transform.position += new Vector3(xAmount, yAmount, 0f);

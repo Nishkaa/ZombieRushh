@@ -11,11 +11,11 @@ public class Weapon : MonoBehaviour
     public bool Deactivate = false;
     public float waitTilNextFire;
     public float fireSpeed = 16f;
-    public Animation anim;
+   
     // Update is called once per frame
     void Start()
     {
-      
+       
 
     }
     void Update()
@@ -24,7 +24,7 @@ public class Weapon : MonoBehaviour
             if (Input.GetButton("Fire1"))
             {
                 Shoot();
-          
+           
         }           
     }
     void Shoot()
