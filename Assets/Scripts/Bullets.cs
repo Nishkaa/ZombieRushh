@@ -32,11 +32,11 @@ public class Bullets : MonoBehaviour
     }
     void Update()
     {
-      
-       // if (Input.GetKeyDown(KeyCode.A))
-       // {
-         //   rb.velocity = transform.right * leftspeed;
-       // }
+     
+        // if (Input.GetKeyDown(KeyCode.A))
+        // {
+        //   rb.velocity = transform.right * leftspeed;
+        // }
     }
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D hitInfo)
@@ -48,7 +48,10 @@ public class Bullets : MonoBehaviour
             enemy.TakeDamage(damage);
             Destroy(gameObject);
             ScoreTextScript.scoreValue += 10;
+           
+           
         }
+       
 
     }
  

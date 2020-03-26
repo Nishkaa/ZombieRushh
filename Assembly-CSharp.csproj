@@ -73,6 +73,7 @@
      <Compile Include="Assets\Scripts\SoldierGunON.cs" />
      <Compile Include="Assets\Scripts\Sound.cs" />
      <Compile Include="Assets\Scripts\SwitchWeapons.cs" />
+     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
      <Compile Include="Assets\Scripts\ZombieEnemy.cs" />
      <Compile Include="Assets\Scripts\camerafollow.cs" />

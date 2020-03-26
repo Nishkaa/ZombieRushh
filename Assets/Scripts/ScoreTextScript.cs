@@ -4,8 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events; 
 using UnityEngine.EventSystems;
+
 public class ScoreTextScript : MonoBehaviour
 {
+    
     public static int scoreValue = 0;
     Text score;
     // Start is called before the first frame update
@@ -13,6 +15,8 @@ public class ScoreTextScript : MonoBehaviour
     {
         score = GetComponent<Text>();
         Color c = new Color(0.5f, 0.5f, 0.5f);
+        
+       
     }
 
     // Update is called once per frame
@@ -20,5 +24,7 @@ public class ScoreTextScript : MonoBehaviour
     {
         
         score.text = "Score: " + scoreValue;
+        
+       
     }
 }

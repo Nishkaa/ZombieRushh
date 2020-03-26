@@ -13,7 +13,7 @@ public class ZombieEnemy : MonoBehaviour
     public GameObject deathEffect;
     public float speed;
     private Transform target;
-    
+    public float jumping;
     void Start()
     {
         
@@ -23,10 +23,22 @@ public class ZombieEnemy : MonoBehaviour
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        
             FindObjectOfType<AudioManager>().Play("EnemyWalking");
 
-        
+        ScoreTextScript score = GetComponent<ScoreTextScript>();
+        if (ScoreTextScript.scoreValue == 1000)
+        {
+           
+            speed = 8;
+            health = 150;
+        }
+        if (ScoreTextScript.scoreValue == 2000)
+        {
 
+            speed = speed * Time.deltaTime + 10;
+            health = 200;
+        }
     }
     public void TakeDamage(int damage)
     {
