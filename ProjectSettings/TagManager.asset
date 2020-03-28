@@ -9,6 +9,7 @@ TagManager:
   - PLayer
   - Flag
   - cubetestground
+  - coins
   layers:
   - Default
   - TransparentFX

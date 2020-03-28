@@ -66,15 +66,26 @@ public class Player : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("Enemy") )
         {
+            //killing enemy
+            //dying from enemy
             Destroy(col.gameObject);
             Destroy(gameObject);
             SceneManager.LoadScene("lose");
         }
         if (col.gameObject.tag.Equals("Flag"))
         {
+            //taking flag to complete the level
             Destroy(col.gameObject);
             Destroy(gameObject);
             SceneManager.LoadScene("LevelComplete");
+        }
+        if (col.gameObject.tag.Equals("coins"))
+        {
+            //taking coins and getting points
+            Destroy(col.gameObject);
+            ScoreTextScript score = GetComponent<ScoreTextScript>();
+            ScoreTextScript.scoreValue += 100;
+            FindObjectOfType<AudioManager>().Play("CoinPickUp");
         }
     }
     //turning and shooting left and right with a weapon 
@@ -88,7 +99,7 @@ public class Player : MonoBehaviour
             transform.localScale = theScale;
         }
     }
-    
+   
    
 }
    

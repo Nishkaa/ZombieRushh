@@ -15,13 +15,16 @@ public class Bullets : MonoBehaviour
     {
         //firing when turn left or right
         rb = GetComponent<Rigidbody2D>();
-
+       
         if (FindObjectOfType<Player>().facingRight)
         {
             //bullet speed
             rb.velocity = transform.right * speed;
+          
             Destroy(gameObject,10.0f);
+           
         }
+       
         else
         {
             rb.velocity = -transform.right * speed;

@@ -7,13 +7,12 @@ ScriptsOnlyBuild:
     - CameraShake_T1
     - CubeAnimScript
     - EndLevelWalls
-    - EnemySpawner
     - GameTimer
     - MainMenu
     - Player
     - ScoreTextScript
-    - SecondEnemySpawner
     - SoldierGunON
+    - WaveSpawner
     - Weapon
     - ZombieEnemy
     - camerafollow
@@ -28,10 +27,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -76,15 +73,15 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11188}
+      Script: {instanceID: 11186}
     - Class: 114
-      Script: {instanceID: 11448}
+      Script: {instanceID: 11444}
     - Class: 114
-      Script: {instanceID: 11970}
+      Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 12494}
+      Script: {instanceID: 12492}
     - Class: 114
-      Script: {instanceID: 12812}
+      Script: {instanceID: 12810}
     - Class: 114
       Script: {instanceID: 13090}
     - Class: 114
@@ -141,31 +138,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11188}
+      Script: {instanceID: 11186}
     - Class: 114
-      Script: {instanceID: 11226}
+      Script: {instanceID: 11224}
     - Class: 114
-      Script: {instanceID: 11400}
+      Script: {instanceID: 11396}
     - Class: 114
-      Script: {instanceID: 11520}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 11964}
+      Script: {instanceID: 11960}
     - Class: 114
-      Script: {instanceID: 11970}
+      Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 12266}
+      Script: {instanceID: 12262}
     - Class: 114
-      Script: {instanceID: 12296}
+      Script: {instanceID: 12292}
     - Class: 114
-      Script: {instanceID: 12430}
+      Script: {instanceID: 12390}
     - Class: 114
-      Script: {instanceID: 12434}
+      Script: {instanceID: 12432}
     - Class: 114
-      Script: {instanceID: 12676}
+      Script: {instanceID: 12674}
     - Class: 114
-      Script: {instanceID: 12790}
+      Script: {instanceID: 12788}
     - Class: 114
-      Script: {instanceID: 13014}
+      Script: {instanceID: 13012}
+    - Class: 114
+      Script: {instanceID: 13072}
     - Class: 114
       Script: {instanceID: 13090}
     - Class: 114
@@ -173,13 +172,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13314}
     - Class: 114
-      Script: {instanceID: 13324}
-    - Class: 114
       Script: {instanceID: 13482}
     - Class: 114
       Script: {instanceID: 13564}
-    - Class: 114
-      Script: {instanceID: 31016}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -230,15 +225,15 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11188}
+      Script: {instanceID: 11186}
     - Class: 114
-      Script: {instanceID: 11448}
+      Script: {instanceID: 11444}
     - Class: 114
-      Script: {instanceID: 11970}
+      Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 12494}
+      Script: {instanceID: 12492}
     - Class: 114
-      Script: {instanceID: 12812}
+      Script: {instanceID: 12810}
     - Class: 114
       Script: {instanceID: 13090}
     - Class: 114
@@ -287,15 +282,15 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11188}
+      Script: {instanceID: 11186}
     - Class: 114
-      Script: {instanceID: 11448}
+      Script: {instanceID: 11444}
     - Class: 114
-      Script: {instanceID: 11970}
+      Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 12494}
+      Script: {instanceID: 12492}
     - Class: 114
-      Script: {instanceID: 12812}
+      Script: {instanceID: 12810}
     - Class: 114
       Script: {instanceID: 13090}
     - Class: 114
@@ -344,19 +339,19 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11188}
+      Script: {instanceID: 11186}
     - Class: 114
-      Script: {instanceID: 11400}
+      Script: {instanceID: 11396}
     - Class: 114
-      Script: {instanceID: 11448}
+      Script: {instanceID: 11444}
     - Class: 114
-      Script: {instanceID: 11964}
+      Script: {instanceID: 11960}
     - Class: 114
-      Script: {instanceID: 11970}
+      Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 12494}
+      Script: {instanceID: 12492}
     - Class: 114
-      Script: {instanceID: 12812}
+      Script: {instanceID: 12810}
     - Class: 114
       Script: {instanceID: 13090}
     - Class: 114
@@ -407,19 +402,19 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11188}
+      Script: {instanceID: 11186}
     - Class: 114
-      Script: {instanceID: 11400}
+      Script: {instanceID: 11396}
     - Class: 114
-      Script: {instanceID: 11448}
+      Script: {instanceID: 11444}
     - Class: 114
-      Script: {instanceID: 11964}
+      Script: {instanceID: 11960}
     - Class: 114
-      Script: {instanceID: 11970}
+      Script: {instanceID: 11966}
     - Class: 114
-      Script: {instanceID: 12494}
+      Script: {instanceID: 12492}
     - Class: 114
-      Script: {instanceID: 12812}
+      Script: {instanceID: 12810}
     - Class: 114
       Script: {instanceID: 13090}
     - Class: 114
@@ -751,7 +746,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: e9990e040f4d72c02e4f9f24a17b6251
+      Hash: 2b0060d4217d02d938a3727fd5d9d13a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ZombieEnemy
@@ -791,6 +786,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: d8d6a4126d1921f3949157d351d37b15
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WaveSpawner
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -949,6 +950,12 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
+      Hash: ea9edcd3ee68904343c8b36ed8f33a55
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CubeAnimScript
+  - hash:
+      serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -997,7 +1004,7 @@ ScriptsOnlyBuild:
     className: CameraShake_T1
   - hash:
       serializedVersion: 2
-      Hash: bd2daa3b50383793aa31724e5e7df329
+      Hash: 067c97ac613f495da6692eed3c5bc2d2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemySpawner
@@ -1127,12 +1134,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: ea9edcd3ee68904343c8b36ed8f33a55
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CubeAnimScript
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity

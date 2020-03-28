@@ -78,6 +78,7 @@
      <Compile Include="Assets\Scripts\ZombieEnemy.cs" />
      <Compile Include="Assets\Scripts\camerafollow.cs" />
      <Compile Include="Assets\Scripts\charge_jump.cs" />
+     <Compile Include="Assets\Scripts\coinSpawner.cs" />
      <Compile Include="Assets\Scripts\level2ES.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Program Files (x86)/Github/ZombieRushh/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -13,8 +13,8 @@ public class WaveSpawner : MonoBehaviour
        //EnemySpawn();
         StartSpawn();
     }
-
-  public void EnemySpawn()
+    
+public void EnemySpawn()
     {
         
         Vector2 SpawnPosition = new Vector2(transform.position.x, transform.position.y);
@@ -25,6 +25,5 @@ public class WaveSpawner : MonoBehaviour
     {
         InvokeRepeating("EnemySpawn", 1f,SpawnRate);
     }
-   
   
 }

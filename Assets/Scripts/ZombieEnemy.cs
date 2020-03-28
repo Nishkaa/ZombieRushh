@@ -5,10 +5,10 @@ using UnityEngine.Audio;
 
 public class ZombieEnemy : MonoBehaviour
 {
-   
 
 
 
+ 
     public int health = 120;
     public GameObject deathEffect;
     public float speed;
@@ -50,6 +50,8 @@ public class ZombieEnemy : MonoBehaviour
         if (col.gameObject.tag.Equals("Bullet"))
         {
             FindObjectOfType<AudioManager>().Play("EnemyHit");
+          
+
         }
        
       
